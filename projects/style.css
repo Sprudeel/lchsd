@@ -181,12 +181,13 @@ h5 {
 }
 
 @media (min-width: 1350px) {
-    body {
-    }
 }
 @media(min-width: 1050px) {
     .current {
-        display: block;
+        display: inline;
+        margin-left: 3em;
+        text-align: center;
+        max-width: 70%;
     }
     .nav {
         display: grid; 
