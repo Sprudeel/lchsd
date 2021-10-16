@@ -26,6 +26,7 @@ body {
 
     background-image: url("images/stacked-waves-haikei.svg");
     background-size: cover;
+
     font-family: 'Archivo', sans-serif;
     font-size: 1.125rem;
     color: var(--clr-text);
