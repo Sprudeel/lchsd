@@ -8,17 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>lchsd</title>
+    <title>lchsd - Home</title>
 </head>
 <body>
     <header>       
 
         <nav class="nav">
             <img class="logo" src="images/logo.svg" alt="" srcset="">
+            <a href="#en" class="lang2" onclick="reload(1)">English</a>
+            <a href="#de" class="lang" onclick="reload(2)">Deutsch</a>
             <ul class="nav__list">
                 <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="projects/index.html" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="updates" class="nav__link">Updates</a></li>
+                <li class="nav__item"><a href="projects/index.html" class="nav__link" id="Nav2">Projects</a></li>
+                <li class="nav__item"><a href="updates" class="nav__link" id="Nav3">Updates</a></li>
             </ul>
             <div class="current">
                 Currently Working on: <br> <b>This Site</b>
@@ -30,8 +32,8 @@
     <div class="container">
 
         <div class="text">
-            <h1>Hello,</h1>
-            <h3>You’re probably wondering where you are. Don’t Panic! <br> <br> You’re on lchsd.ch a place where all (at least the majority) of my Projects find a place to be. Most of them are learning apps which can help you in your Studies. If I’ve made you curious, you’re welcome to visit them in the Projects folder, Or don’t It’s your choice!</h3>
+            <h1 id="Title1">Hello,</h1>
+            <h3 id="Text1">You’re probably wondering where you are. Don’t Panic! <br> <br> You’re on lchsd.ch a place where all (at least the majority) of my Projects find a place to be. Most of them are learning apps which can help you in your Studies. If I’ve made you curious, you’re welcome to visit them in the Projects folder, Or don’t It’s your choice!</h3>
         </div>
 
         <img src="images/first.svg" class="image" alt="">
@@ -41,8 +43,8 @@
     <div class="container">
 
         <div class="text">
-            <h1>Who am I?</h1>
-            <h3>I don’t like to share much of my life on the Internet because I want everyone to know who I am. Just know one thing:
+            <h1 id="Title2">Who am I?</h1>
+            <h3 id="Text2">I don’t like to share much of my life on the Internet because I want everyone to know who I am. Just know one thing:
                 <br><br>
                 <b>If you don’t know who I am, you’re not supposed to.</b>
             </h3>
@@ -69,6 +71,6 @@
 
     </div>
 
-
+    <script src="src.js"></script>
 </body>
 </html>

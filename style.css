@@ -56,6 +56,27 @@ header {
     color: inherit;
 }
 
+.lang {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    position: absolute;
+    float: right;
+    right: 1em;
+    text-transform: uppercase;
+    color: var(--clr-black);
+    font-size: 0.725rem;
+}
+
+.lang2 {
+    position: absolute;
+    left: 1em;
+    text-transform: uppercase;
+    color: var(--clr-black);
+    font-size: 0.725rem;
+    text-decoration: none;
+}
+
 .logo {
     width: 8rem;
     image-resolution: from-image snap;
