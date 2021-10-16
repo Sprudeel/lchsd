@@ -29,7 +29,7 @@ body {
     font-family: 'Archivo', sans-serif;
     font-size: 1.125rem;
     color: var(--clr-text);
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     overflow-x: hidden;
 }
 
@@ -66,9 +66,11 @@ header {
     text-transform: uppercase;
     color: var(--clr-black);
     font-size: 0.725rem;
+    top: 1em;
 }
 
 .lang2 {
+    top: 1em;
     position: absolute;
     left: 1em;
     text-transform: uppercase;
@@ -150,8 +152,8 @@ h3 {
     .nav {
         display: grid; 
         grid-auto-columns: 1fr; 
-        grid-template-columns: 30% 2fr; 
-        gap: 0px 20px; 
+        grid-template-columns:27% 2fr 7%; 
+        gap: 0px 10px; 
         align-items: center; 
         margin-right: 20px;
       }
@@ -173,6 +175,31 @@ h3 {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .lang {
+        position: relative;
+        left: 0.5em;
+        color: var(--clr-black);
+        font-size: 0.725rem;
+        text-decoration: none;
+        vertical-align: middle;
+        justify-self: center;
+        top: 0.5em;
+        bottom: auto;
+        right: auto;
+    }
+    
+    .lang2 {
+        position: relative;
+        left: 1em;
+        color: var(--clr-black);
+        font-size: 0.725rem;
+        text-decoration: none;
+        vertical-align: middle;
+        justify-self: center;
+        top: 0.5em;
+        bottom: auto;
+        right: auto;
+    }
 }
 
 @media (min-width: 1350px) {
@@ -189,7 +216,7 @@ h3 {
     .nav {
     display: grid; 
         grid-auto-columns: 1fr; 
-        grid-template-columns: 30% 2fr  1fr; 
+        grid-template-columns: 25% 2fr 1fr 6%; 
         gap: 0px 20px; 
         align-items: center; 
     }

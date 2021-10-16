@@ -110,7 +110,12 @@ h5 {
 
 .stl {
     background-image: url("images/STL.jpg");
-    background-position: middle;
+    background-size: cover;
+}
+
+.tsa {
+    background-image: url("images/tsa.jpg");
+    background-size: cover;
 }
 
 .current {

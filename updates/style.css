@@ -1,0 +1,145 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-white: white;
+    --clr-primary: #2684db;
+    --clr-primaryop: #2684dbca;
+    --clr-secondary: #2E35E7;
+    --clr-dark: #6026DB;
+    --clr-text: #0B365E;
+    --clr-black: black;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+    --grid: 1fr;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("images/stacked-peaks-haikei.svg");
+    background-repeat: no-repeat;
+    
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.125rem;
+    color: var(--clr-black);
+    line-height: 1.3rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
+    color: var(--clr-black);
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    width: 8rem;
+    image-resolution: from-image snap;
+}
+
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: var(--fw-bold);
+    line-height: 2rem;
+    text-align: center;
+}
+
+.current {
+    display: none;
+}
+
+
+
+@media  (min-width: 800px) {
+    
+    body {
+        line-height: 1.6rem;
+        background-size: cover;
+    }
+    header {
+        background-color: transparent;
+        background-size: cover;
+
+    }
+    .image {
+        display:  block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .last {
+        margin-bottom: auto;
+    }
+    .nav {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 30% 2fr; 
+        gap: 0px 20px; 
+        align-items: center; 
+        margin-right: 20px;
+      }
+    .logo {
+        width: 12rem;
+        justify-items: center;
+    }
+    .nav__list{
+        font-size: 1.8rem;
+    }
+    .current {
+        color: black;
+        font-size: 1.2rem;
+        border-right: 1px solid;
+        border-left: 1px solid;
+        border-radius: 26px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media(min-width: 1050px) {
+    .current {
+        display: block;
+    }
+    .nav {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 30% 2fr  1fr; 
+        gap: 0px 20px; 
+        align-items: center; 
+    }
+    .logo {
+        width: 15rem;
+        justify-items: center;
+    }
+}
+
+
+

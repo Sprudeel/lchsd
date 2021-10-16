@@ -1,4 +1,12 @@
 
+if(window.location.hash === "#en") {
+    document.getElementById(100).style.display='none';
+} else if(window.location.hash === "#de") {
+    document.getElementById(101).style.display='none';
+} else {
+    document.getElementById(100).style.display='none';
+}
+
 
 function reload(lang) {
     
@@ -22,7 +30,7 @@ var language = {
     },
     de: {
         Nav2: "Projekte",
-        Nav3: "Neuigkeiten",
+        Nav3: "Neues",
         Title1: "Hallo,",
         Text1: "Du wunderst dich gerade wahrscheinlich wo du bist. Keine Panik! <br> <br> Du bist auf lchsd.ch ein Ort an welchem alle (oder wenigstens die meisten) meine Programmier Projekte einen Platz zum verweilen finden. Die meisten sind Lern Apps, welche dir bei helfen können. Falls ich dich nun neugierig gemacht habe, darfst du gerne alle Projekte im Projekts Folder besuchen gehen, oder nicht ist deine wahl!"
     }
