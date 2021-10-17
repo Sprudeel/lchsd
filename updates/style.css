@@ -1,11 +1,13 @@
 
 
+/* Standard */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* Root */
 :root {
     --clr-white: white;
     --clr-primary: #2684db;
@@ -20,26 +22,29 @@
     --grid: 1fr;
 }
 
+
+/* Body and Normal */
 body {
     margin: 0;
     padding: 0;
 
-    background-image: url("images/stacked-peaks-haikei.svg");
+    /* background-image: url("images/stacked-peaks-haikei.svg"); */
     background-repeat: no-repeat;
     
     font-family: 'Archivo', sans-serif;
     font-size: 1.125rem;
     color: var(--clr-black);
     line-height: 1.3rem;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
+/* Top Bar */
 header {
     padding: 1em;
     text-align: center;
 }
 
+
+/* List Containing Different Pages */
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -53,17 +58,21 @@ header {
     color: var(--clr-black);
 }
 
+/* The Different Pages */
 .nav__link {
     text-decoration: none;
     color: inherit;
 }
 
+
+/* LCHSD Logo */
 .logo {
     width: 8rem;
     image-resolution: from-image snap;
 }
 
 
+/* Used No Where */
 h1 {
     font-size: 2.1rem;
     font-weight: var(--fw-bold);
@@ -71,6 +80,55 @@ h1 {
     text-align: center;
 }
 
+/* Title With Line */
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #808080;
+    color: #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+
+
+/* Hide big Tracker Calender */
+.calcontainer {
+    display: none;
+}
+
+/* Contains all Infos */
+.container {
+    margin: auto;
+    width: 90%;
+}
+.currentinfos {
+    margin-bottom: 2em;
+}
+h4 {
+    margin-bottom: 3px;
+}
+.details {
+    margin-left: 2em;
+    line-height: 2rem;
+}
+.png {
+    vertical-align: -5px;
+}
+.logogithub {
+    width: 20px;
+    vertical-align: -3px;
+    margin-right: 3px;
+}
+.title {
+    margin-top: 1.5em;
+}
+
+/* Hide Current in Nav Bar */
 .current {
     display: none;
 }
