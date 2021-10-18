@@ -21,7 +21,10 @@
     --fw-black: 900;
     --grid: 1fr;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 
 /* Body and Normal */
 body {
@@ -87,13 +90,15 @@ h2 {
     border-bottom: 2px solid #808080;
     color: #000;
     line-height: 1.5rem;
-    margin: 20px 0 20px;
+    margin: 20px 0px 20px;
+    margin-bottom: 20px;
 }
 
 
 /* Hide big Tracker Calender */
 .calcontainer {
     display: none;
+    margin-top: 2rem;
 }
 
 /* Contains all Infos */
@@ -212,7 +217,7 @@ h4 {
 
       #feed {
           overflow-y: scroll;
-          max-height: 15rem;
+          max-height: 20rem;
       }
     /* Hide big Tracker Calender */
     .calcontainer {

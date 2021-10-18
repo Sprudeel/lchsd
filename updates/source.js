@@ -16,4 +16,4 @@ GitHubCalendar(".calendar", "Sprudeel", {
     proxy (username) {
     return fetch(`https://your-proxy.com/github?user=${username}`)
     }
-}).then(r => r.text());
+});
