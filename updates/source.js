@@ -2,7 +2,7 @@
 GitHubActivity.feed({
     username: "Sprudeel",
     selector: "#feed",
-    limit: 15,
+    limit: 10,
   });
 
 
