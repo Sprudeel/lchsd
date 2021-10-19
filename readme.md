@@ -1,11 +1,10 @@
-# LCHSD Repository
+# ✨ LCHSD Repository ✨
 
 Welcome to this Repository containing the Code of the lchsd.ch Webpage!
 
 [Visit Webpage](https://lchsd.ch)
 
-
-## About this Project
+## 📙 About this Project
 This Project was created to host and make my other Projects more accesible! Such Projects include different Games, that can help you in some form or another :)
 
 
