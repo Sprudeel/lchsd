@@ -1,11 +1,22 @@
+/* 
+        Part of the lchsd.ch Website!
+
+        Made by @Sprudeel (GitHub)
+
+        Repository: https://github.com/Sprudeel/lchsd
+
+        19.10.2021
+*/
 
 
+/* Set Box-Sizing to Border-box */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* Variables */
 :root {
     --clr-white: white;
     --clr-primary: #2684db;
@@ -20,6 +31,7 @@
     --grid: 1fr;
 }
 
+/* Body */
 body {
     margin: 0;
     padding: 0;
@@ -33,11 +45,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Header Containing Top Part */
 header {
     padding: 1em;
     text-align: center;
 }
 
+/* Contains Links to other Pages */
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -51,46 +65,45 @@ header {
     color: var(--clr-black);
 }
 
+/* Links to the other Pages */
 .nav__link {
     text-decoration: none;
     color: inherit;
 }
 
+/* LCHSD Logo */
 .logo {
     width: 8rem;
     image-resolution: from-image snap;
 }
 
-.background {
-    position: absolute;
-    top: 0;
-    opacity: 0.8;
-    z-index: -1;
-    width: 100%;
-}
-
+/* Container of Paragraphs */
 .text {
     z-index: -1;
     padding: 0.6em;
     opacity: 1.5;   
 }
 
+/* H1, Used in Paragraphs as Titles */
 h1 {
     font-size: 2.1rem;
     font-weight: var(--fw-bold);
     line-height: 2rem;
 }
 
+/* H3, Used in Paragraohs as Texts */
 h3 {
     font-size: 1.3rem;
     font-weight: var(--fw-normal);
     margin-bottom: 5px;
 }
 
+/* H5 and stuff */
 h5 {
     line-height: 1rem;
 }
 
+/* SVGs after Paragraphs */
 .image {
     max-width: 80%;
     display: block;
@@ -98,6 +111,10 @@ h5 {
     margin-right: auto;
 }
 
+.background {
+    z-index: -1;
+}
+/* Standart Stuff of Game Info */
 .content {
     position: relative;
     margin: 1.4em;
@@ -108,23 +125,28 @@ h5 {
     cursor: pointer;
 }
 
+/* Swiss Topo Learner Background Picture */
 .stl {
     background-image: url("images/STL.jpg");
     background-size: cover;
 }
 
+/* Topo Australien und Südamerika Background Picture */
 .tsa {
     background-image: url("images/tsa.jpg");
     background-size: cover;
 }
 
+/* Hide Currently Working on Nav Bar */
 .current {
     display: none;
 }
 
 
-
+/* Media Query Change when min-width is more than 800px */
 @media  (min-width: 800px) {
+
+    /* Container of Games */
     .container {
         display: grid; 
         grid-auto-columns: 1fr 1fr; 
@@ -133,25 +155,25 @@ h5 {
         margin-top: 3rem;
         padding: 10px;
     }
+
+    /* Swiss Topo Learner */
     .stl {
         grid: 1 / 2;
     }
+
+    /* Body Stuff */
     body {
         line-height: 1.6rem;
     }
+
+    /* Header */
     header {
         background-color: transparent;
         background-size: cover;
 
     }
-    .image {
-        display:  block;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .last {
-        margin-bottom: auto;
-    }
+
+    /* Navigation */
     .nav {
         display: grid; 
         grid-auto-columns: 1fr; 
@@ -159,14 +181,20 @@ h5 {
         gap: 0px 20px; 
         align-items: center; 
         margin-right: 20px;
-      }
+    }
+
+    /* LCHSD Logo */
     .logo {
         width: 12rem;
         justify-items: center;
     }
+
+    /* Contains Links to other Pages */
     .nav__list{
         font-size: 1.8rem;
     }
+
+    /* Set Current Projects on Nav Bar */
     .current {
         color: black;
         font-size: 1.2rem;
@@ -180,15 +208,16 @@ h5 {
     }
 }
 
-@media (min-width: 1350px) {
-}
+/* Media Query Change when min-width is more than 1050px */
 @media(min-width: 1050px) {
+    /* Current Project on Nav Bar */
     .current {
         display: inline;
         margin-left: 3em;
         text-align: center;
         max-width: 70%;
     }
+    /* Set Navigation */
     .nav {
         display: grid; 
         grid-auto-columns: 1fr; 
@@ -196,6 +225,7 @@ h5 {
         gap: 0px 20px; 
         align-items: center; 
     }
+    /* LCHSD Logo */
     .logo {
         width: 15rem;
         justify-items: center;
@@ -204,7 +234,7 @@ h5 {
 
 
 
-
+/* BACKGROUND */
 @keyframes animate {
     0%{
         transform: translateY(-130vh) rotate(0deg);
@@ -226,7 +256,7 @@ h5 {
     left: 0;
     margin: 0;
     padding: 0;
-    background: #ff8040;
+    background: #ff8c52;
     overflow: hidden;
 }
 .background li {

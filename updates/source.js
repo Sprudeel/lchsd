@@ -1,4 +1,14 @@
+//
+// Part of the lchsd.ch Website!
+//
+// Made by @Sprudeel (GitHub)
+//
+// Repository: https://github.com/Sprudeel/lchsd
+//
+// 19.10.2021
 
+
+// GitHub Activity Feed
 GitHubActivity.feed({
     username: "Sprudeel",
     selector: "#feed",
@@ -6,6 +16,8 @@ GitHubActivity.feed({
   });
 
 
+
+// GitHub Calender
 GitHubCalendar(".calendar", "Sprudeel");
     
 // or enable responsive functionality:

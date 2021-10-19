@@ -1,4 +1,15 @@
+//
+// Part of the lchsd.ch Website!
+//
+// Made by @Sprudeel (GitHub)
+//
+// Repository: https://github.com/Sprudeel/lchsd
+//
+// 19.10.2021
 
+
+
+// Check if Hash is present, then hide and show the other Language Button
 if(window.location.hash === "#en") {
     document.getElementById(100).style.display='none';
 } else if(window.location.hash === "#de") {
@@ -8,6 +19,7 @@ if(window.location.hash === "#en") {
 }
 
 
+// Reload on click and change Hash
 function reload(lang) {
     
     if(lang === 1) {
@@ -20,6 +32,8 @@ function reload(lang) {
 }
 
 
+
+// JSON Variable with all Texts
 var language = {
     en: {
         Nav2: "Projects",
@@ -43,7 +57,7 @@ var language = {
     }
 }
 
-
+// Set German Text if Hash is #de!
 if (window.location.hash) {
     if (window.location.hash === "#de") {
         Nav2.textContent = language.de.Nav2;

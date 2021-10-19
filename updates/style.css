@@ -1,4 +1,12 @@
+/* 
+        Part of the lchsd.ch Website!
 
+        Made by @Sprudeel (GitHub)
+
+        Repository: https://github.com/Sprudeel/lchsd
+
+        19.10.2021
+*/
 
 /* Standard */
 *,
@@ -106,19 +114,27 @@ h2 {
     margin: auto;
     width: 90%;
 }
+
+
 .currentinfos {
     margin-bottom: 2em;
     text-align: center;
     border: 1px solid #808080;
     border-radius: 20px;
 }
+
+
 h3 {
     font-size: 2rem;
     margin-top: 0.5em;
 }
+
+
 h4 {
     margin-bottom: 3px;
 }
+
+
 .details {
     line-height: 2rem;
     display: grid; 
@@ -135,18 +151,26 @@ h4 {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+
 .detailstitle {
     text-align: left;
     margin-left: 0.5em;
 }
+
+
 .png {
     vertical-align: -5px;
 }
+
+
 .logogithub {
     width: 20px;
     vertical-align: -3px;
     margin-right: 3px;
 }
+
+
 .title {
     margin-top: 1.5em;
 }
@@ -155,6 +179,8 @@ h4 {
 .current {
     display: none;
 }
+
+
 .titlecalender {
     display: None;
 }
@@ -249,7 +275,7 @@ h4 {
 }
 
 
-
+/* GitHub Calender */
 :root {
     --color-calendar-graph-day-bg: #dddbdb;
     --color-calendar-graph-day-L1-bg: #39dd34;

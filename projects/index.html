@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- 
+        Part of the lchsd.ch Website!
+
+        Made by @Sprudeel (GitHub)
+
+        Repository: https://github.com/Sprudeel/lchsd
+
+        19.10.2021
+     -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&display=swap" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icon on Tab Bar -->
+    <link rel="shortcut icon" href="images/logo_small_icon_only.png" type="image/x-icon">
+
+    <!-- CSS Stylesheet Local -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Title of Page -->
     <title>lchsd - Projects</title>
     <script src="source.js"></script>
 </head>
 <body>
-    <header>       
 
-        <nav class="nav">
-            <img class="logo" src="images/logo.svg" alt="" srcset="">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="../updates/index.html" class="nav__link">Updates</a></li>
-            </ul>
+   <!-- Header on Top -->
+   <header>       
+
+    <!-- Navigation -->
+    <nav class="nav">
+
+
+        <!-- LCHSD Logo -->
+        <img class="logo" src="images/logo.svg" alt="" srcset="">
+
+        <!-- Navigation Links -->
+        <ul class="nav__list">
+
+            <!-- Home -->
+            <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+
+            <!-- Projects -->
+            <li class="nav__item"><a href="../projects/index.html" class="nav__link" id="Nav2">Projects</a></li>
+
+            <!-- Updates -->
+            <li class="nav__item"><a href="../updates/index.html" class="nav__link" id="Nav3">Updates</a></li>
+            
+        </ul>
+
+            <!-- Currently Working on (visible at width of 1050px) -->
             <div class="current">
                 Currently Working on: <br> <b>This Site</b>
             </div>
-        </nav>
-    </header>
 
-    
+    </nav>
+
+
+</header>
+
+<!-- Container of Games -->
     <div class="container">
+
+        <!-- Swiss Topo Learner -->
         <div class="content stl" onclick="toSTL()">
             <h1>Swiss Topo Learner</h1>
             <h3>Lerne alle Wichtigen Topographischen Punkte der Schweiz!</h3>
             <h5>Tags: Geographie, Topographie</h5>
         </div>
 
+        <!-- Topo Australien und Südamerika -->
         <div class="content tsa" onclick="toSTL()">
             <h1>Topo Australien, Südamerika</h1>
             <h3>Lerne alle Wichtigen Topographischen Punkte von Australien und Südamerika!</h3>
             <h5>Tags: Geographie, Topographie</h5>
         </div>
 
-
+        <!-- To ne done Topo Learner -->
         <div class="content tbd" onclick="">
             <h1>In Development</h1>
             <h3>Maybe another TopoLearner, Who knows...</h3>
@@ -52,7 +93,7 @@
 
 
 
-    
+    <!-- Fancy Background -->
     <ul class="background">
         <li></li>
         <li></li>

@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- 
+        Part of the lchsd.ch Website!
+
+        Made by @Sprudeel (GitHub)
+
+        Repository: https://github.com/Sprudeel/lchsd
+
+        19.10.2021
+     -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +24,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&display=swap" rel="stylesheet"> 
     
 
-    
-
-    
-
 
     <!-- Import GitHub Activity Shit -->
     <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
@@ -27,6 +32,8 @@
     <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
 
+    <!-- Icon on Tab Bar -->
+    <link rel="shortcut icon" href="images/logo_small_icon_only.png" type="image/x-icon">
 
     <!-- Import GitHub Calender -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"> </script>
@@ -39,23 +46,42 @@
     
 </head>
 <body>
-    <header>       
 
-        <nav class="nav">
-            <img class="logo" src="images/logo.svg" alt="" srcset="">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="../projects/index.html" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="/" class="nav__link">Updates</a></li>
-            </ul>
+    <!-- Header on Top -->
+   <header>       
+
+    <!-- Navigation -->
+    <nav class="nav">
+
+
+        <!-- LCHSD Logo -->
+        <img class="logo" src="images/logo.svg" alt="" srcset="">
+
+        <!-- Navigation Links -->
+        <ul class="nav__list">
+
+            <!-- Home -->
+            <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+
+            <!-- Projects -->
+            <li class="nav__item"><a href="projects/index.html" class="nav__link" id="Nav2">Projects</a></li>
+
+            <!-- Updates -->
+            <li class="nav__item"><a href="updates/index.html" class="nav__link" id="Nav3">Updates</a></li>
+            
+        </ul>
+
+            <!-- Currently Working on (visible at width of 1050px) -->
             <div class="current">
                 Currently Working on: <br> <b>This Site</b>
             </div>
-        </nav>
 
-    </header>
+    </nav>
+
+
+</header>
     
-
+    <!-- Container of Content -->
     <div class="bigcontainer">
 
         <!-- CALENDER -->
@@ -68,13 +94,13 @@
             <div class="temp">
                 <h2>Current Project:</h2>
                 <div class="currentinfos">
-                    <h3>This Website</h3> 
+                    <h3 id="projecttitle">This Website</h3> 
 
                     <h4 class="detailstitle">Project Details:</h4>
                     <br>
                     <div class="details">
-                        <div><span class="material-icons md-18 png">pending_actions</span> Progress: <b id="progress"> LOADING </b> <br></div>
-                        <div><span class="material-icons md-18 png">play_arrow</span> Started at: <b id="start">LOADING</b>  <br></div>
+                    <div><span class="material-icons md-18 png">pending_actions</span> Progress: <b id="progress"> LOADING </b> <br></div>
+                    <div><span class="material-icons md-18 png">play_arrow</span> Started at: <b id="start">LOADING</b>  <br></div>
                     <div><img src="images/GitHub-Mark-32px.png" class="logogithub"> GitHub Repo: <b id="repo">LOADING</b> <br></div>
                     <div><span class="material-icons md-18 png">outlined_flag</span> Deadline: <b id="finish">LOADING</b></div>
                     </div>
@@ -82,8 +108,10 @@
                 
 
 
-                </div>
+            </div>
         </div>
+
+        <!-- Git Hub FEEED -->
             <div class="github">
 
                 <h2> <span>GitHub Activity</span></h2>
@@ -133,6 +161,7 @@
             document.getElementById("start").innerHTML = docSnap.data().started;
             document.getElementById("repo").innerHTML = "<a href='http://www.github.com/"+ docSnap.data().repo + "'>"+ docSnap.data().repo+"</a> ";
             document.getElementById("finish").innerHTML = docSnap.data().finish;
+            document.getElementById("projecttitle").innerHTML = docSnap.data().name;
         } else {
         console.log("No such document!");
         }

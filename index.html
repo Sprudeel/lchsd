@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- 
+        Part of the lchsd.ch Website!
+
+        Made by @Sprudeel (GitHub)
+
+        Repository: https://github.com/Sprudeel/lchsd
+
+        19.10.2021
+     -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google Fonts Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&display=swap" rel="stylesheet"> 
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon on Tab Bar -->
+    <link rel="shortcut icon" href="images/logo_small_icon_only.png" type="image/x-icon">
+    
+    <!-- CSS Stylesheet Locacl -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Title -->
     <title>lchsd - Home</title>
 </head>
 <body>
+
+    <!-- Header on Top -->
     <header>       
 
+        <!-- Navigation -->
         <nav class="nav">
+
+
+            <!-- LCHSD Logo -->
             <img class="logo" src="images/logo.svg" alt="" srcset="">
+
+            <!-- Navigation Links -->
             <ul class="nav__list">
+
+                <!-- Home -->
                 <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+
+                <!-- Projects -->
                 <li class="nav__item"><a href="projects/index.html" class="nav__link" id="Nav2">Projects</a></li>
+
+                <!-- Updates -->
                 <li class="nav__item"><a href="updates/index.html" class="nav__link" id="Nav3">Updates</a></li>
                 
             </ul>
 
+                <!-- Currently Working on (visible at width of 1050px) -->
                 <div class="current">
                     Currently Working on: <br> <b>This Site</b>
                 </div>
+
+            <!-- Language Changer (only one visible) en default -->
             <a href="#en" id="100" class="lang2" onclick="reload(1)"><img src="images/english.png" alt="English"></a>
-                <a href="#de" id="101" class="lang" onclick="reload(2)"><img src="images/german.png" alt=""></a>
+            <a href="#de" id="101" class="lang" onclick="reload(2)"><img src="images/german.png" alt=""></a>
         </nav>
+
+
     </header>    
 
+    <!-- First Container -->
     <div class="container">
 
+        <!-- First Paragraph -->
         <div class="text">
             <h1 id="Title1">Hello,</h1>
             <h3 id="Text1">You’re probably wondering where you are. Don’t Panic! <br> <br> You’re on lchsd.ch a place where all (at least the majority) of my Projects find a place to be. Most of them are learning apps which can help you in your Studies. If I’ve made you curious, you’re welcome to visit them in the Projects folder, Or don’t It’s your choice!</h3>
         </div>
 
+        <!-- First Image -->
         <img src="images/first.svg" class="image" alt="">
 
     </div>
 
+
+    <!-- Second Container -->
     <div class="container">
 
+        <!-- Second Text -->
         <div class="text">
             <h1 id="Title2">Who I am</h1>
             <h3 id="Text2">I don’t like to share much of my life on the Internet because I don't want everyone to know who I am. Just know one thing:
@@ -51,12 +96,15 @@
             </h3>
         </div>
 
+        <!-- Second Image -->
         <img src="images/second.svg" class="image" alt="">
 
     </div>
 
+    <!-- Third Container -->
     <div class="container">
 
+        <!-- Third Text -->
         <div class="text">
             <h1 id="Title3">About the Website,</h1>
             <h3 id="Text3">This Website is just plain Vanilla HTML, CSS and Javascript mostly handcoded and hostet by the nice People over at Hostpoint. The entire Source Code is available on my GitHub! 
@@ -68,10 +116,13 @@
             </h3>
         </div>
 
+        <!-- Third Image -->
         <img src="images/third.svg" class="image last" alt="">
 
     </div>
 
+
+    <!-- JavaScript File -->
     <script src="src.js"></script>
 </body>
 </html>
