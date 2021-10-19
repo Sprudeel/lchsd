@@ -2,7 +2,7 @@
 
 Welcome to this Repository containing the Code of the lchsd.ch Webpage!
 
-[Visit Webpage](lhttps://lchsd.ch)
+- [Visit Webpage](lhttps://lchsd.ch)
 
 
 ## About this Project
