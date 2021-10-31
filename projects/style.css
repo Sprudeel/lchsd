@@ -137,11 +137,28 @@ h5 {
     background-size: cover;
 }
 
+.tla {
+    background-image: url("images/tla.jpg");
+    background-size: cover;
+}
+
 /* Hide Currently Working on Nav Bar */
 .current {
     display: none;
 }
 
+.new {
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    background-color: rgb(224, 49, 49);
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 6px;
+    border-color: black;
+    transform: rotate(30deg);
+}
 
 /* Media Query Change when min-width is more than 800px */
 @media  (min-width: 800px) {
