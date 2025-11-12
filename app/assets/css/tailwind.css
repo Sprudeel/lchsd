@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light;
+    --color-background: 248 250 252;
+    --color-surface: 255 255 255;
+    --color-foreground: 15 23 42;
+    --color-muted: 71 85 105;
+    --color-accent: 59 130 246;
+    --color-border: 226 232 240;
+    --grid-color: rgba(15, 23, 42, 0.08);
+    --grid-size: 32px;
+}
+
+html.dark {
+    color-scheme: dark;
+    --color-background: 8 11 18;
+    --color-surface: 15 23 42;
+    --color-foreground: 241 245 249;
+    --color-muted: 148 163 184;
+    --color-accent: 56 189 248;
+    --color-border: 51 65 85;
+    --grid-color: rgba(148, 163, 184, 0.12);
+}
+
+@layer base {
+    html {
+        @apply font-sans;
+        background-color: rgb(var(--color-background));
+        color: rgb(var(--color-foreground));
+        scroll-behavior: smooth;
+        text-rendering: geometricPrecision;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+
+    body {
+        @apply bg-background text-foreground antialiased;
+        min-height: 100vh;
+    }
+
+    ::selection {
+        background-color: rgba(56, 189, 248, 0.2);
+    }
+}
+
+.skip-link {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    padding: 0.5rem 1rem;
+    background: rgb(var(--color-surface));
+    border-radius: 9999px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    color: inherit;
+    z-index: 50;
+    transition: transform 150ms ease;
+}
+
+.skip-link:focus-visible {
+    transform: translate(-50%, 0);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skip-link {
+        transition: none;
+    }
+}
